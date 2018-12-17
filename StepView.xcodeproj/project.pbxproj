@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		5118F42321C7A6B600AEE0E5 /* StepView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5118F42121C7A6B600AEE0E5 /* StepView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5118F42A21C7A9E000AEE0E5 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F42921C7A9E000AEE0E5 /* StepView.swift */; };
+		5118F44621C7BD7A00AEE0E5 /* IStepViewCircleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F44521C7BD7A00AEE0E5 /* IStepViewCircleFactory.swift */; };
+		5118F44821C7BDA300AEE0E5 /* StepBaseCircleViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F44721C7BDA300AEE0E5 /* StepBaseCircleViewFactory.swift */; };
+		5118F44A21C7BDB800AEE0E5 /* StepTextCircleViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F44921C7BDB800AEE0E5 /* StepTextCircleViewFactory.swift */; };
+		5118F44D21C7BE3700AEE0E5 /* CircleViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F44C21C7BE3700AEE0E5 /* CircleViewProtocols.swift */; };
+		5118F45021C7BE6B00AEE0E5 /* StepBaseCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F44F21C7BE6B00AEE0E5 /* StepBaseCircleView.swift */; };
+		5118F45221C7BED800AEE0E5 /* StepTextCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F45121C7BED800AEE0E5 /* StepTextCircleView.swift */; };
+		5118F45421C7BFD700AEE0E5 /* StepViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F45321C7BFD700AEE0E5 /* StepViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +23,13 @@
 		5118F42121C7A6B600AEE0E5 /* StepView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StepView.h; sourceTree = "<group>"; };
 		5118F42221C7A6B600AEE0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5118F42921C7A9E000AEE0E5 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		5118F44521C7BD7A00AEE0E5 /* IStepViewCircleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IStepViewCircleFactory.swift; sourceTree = "<group>"; };
+		5118F44721C7BDA300AEE0E5 /* StepBaseCircleViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBaseCircleViewFactory.swift; sourceTree = "<group>"; };
+		5118F44921C7BDB800AEE0E5 /* StepTextCircleViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTextCircleViewFactory.swift; sourceTree = "<group>"; };
+		5118F44C21C7BE3700AEE0E5 /* CircleViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewProtocols.swift; sourceTree = "<group>"; };
+		5118F44F21C7BE6B00AEE0E5 /* StepBaseCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBaseCircleView.swift; sourceTree = "<group>"; };
+		5118F45121C7BED800AEE0E5 /* StepTextCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTextCircleView.swift; sourceTree = "<group>"; };
+		5118F45321C7BFD700AEE0E5 /* StepViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				5118F42B21C7AB1E00AEE0E5 /* Sources */,
-				5118F42021C7A6B600AEE0E5 /* StepView */,
 				5118F41F21C7A6B600AEE0E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,21 +59,53 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5118F42021C7A6B600AEE0E5 /* StepView */ = {
+		5118F42021C7A6B600AEE0E5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				5118F42121C7A6B600AEE0E5 /* StepView.h */,
 				5118F42221C7A6B600AEE0E5 /* Info.plist */,
 			);
-			path = StepView;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5118F42B21C7AB1E00AEE0E5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				5118F42921C7A9E000AEE0E5 /* StepView.swift */,
+				5118F44E21C7BE5400AEE0E5 /* ModuleViews */,
+				5118F44B21C7BE2900AEE0E5 /* ViewsProtocols */,
+				5118F44421C7BD5D00AEE0E5 /* Factories */,
+				5118F42021C7A6B600AEE0E5 /* Resources */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		5118F44421C7BD5D00AEE0E5 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				5118F44521C7BD7A00AEE0E5 /* IStepViewCircleFactory.swift */,
+				5118F44721C7BDA300AEE0E5 /* StepBaseCircleViewFactory.swift */,
+				5118F44921C7BDB800AEE0E5 /* StepTextCircleViewFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		5118F44B21C7BE2900AEE0E5 /* ViewsProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				5118F44C21C7BE3700AEE0E5 /* CircleViewProtocols.swift */,
+				5118F45321C7BFD700AEE0E5 /* StepViewContainer.swift */,
+			);
+			path = ViewsProtocols;
+			sourceTree = "<group>";
+		};
+		5118F44E21C7BE5400AEE0E5 /* ModuleViews */ = {
+			isa = PBXGroup;
+			children = (
+				5118F44F21C7BE6B00AEE0E5 /* StepBaseCircleView.swift */,
+				5118F45121C7BED800AEE0E5 /* StepTextCircleView.swift */,
+			);
+			path = ModuleViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5118F44A21C7BDB800AEE0E5 /* StepTextCircleViewFactory.swift in Sources */,
+				5118F45221C7BED800AEE0E5 /* StepTextCircleView.swift in Sources */,
 				5118F42A21C7A9E000AEE0E5 /* StepView.swift in Sources */,
+				5118F44D21C7BE3700AEE0E5 /* CircleViewProtocols.swift in Sources */,
+				5118F45421C7BFD700AEE0E5 /* StepViewContainer.swift in Sources */,
+				5118F44621C7BD7A00AEE0E5 /* IStepViewCircleFactory.swift in Sources */,
+				5118F44821C7BDA300AEE0E5 /* StepBaseCircleViewFactory.swift in Sources */,
+				5118F45021C7BE6B00AEE0E5 /* StepBaseCircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +333,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StepView/Info.plist;
+				INFOPLIST_FILE = Sources/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +360,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StepView/Info.plist;
+				INFOPLIST_FILE = Sources/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
