@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol IStepViewCircleFactory {
+internal protocol IStepViewCircleFactory {
     associatedtype StepCircleView
     
     func create(frame: CGRect, circleRadius: CGFloat, circleBorderColor: UIColor) -> StepCircleView

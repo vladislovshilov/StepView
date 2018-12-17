@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "StepView"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "Convenient way to create a screen with a few steps."
 
   # This description is used to generate tags and improve search results.

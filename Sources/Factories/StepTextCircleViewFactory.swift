@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class StepTextCircleViewFactory: IStepViewCircleFactory {
+final internal class StepTextCircleViewFactory: IStepViewCircleFactory {
     typealias StepViewCircle = ITextCircleViewDrawable & ILineDrawable
     
     func create(frame: CGRect, circleRadius: CGFloat, circleBorderColor: UIColor) -> StepViewCircle {

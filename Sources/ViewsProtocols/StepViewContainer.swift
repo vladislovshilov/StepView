@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol StepViewContainer {
+internal protocol StepViewContainer {
     var numberOfSteps: Int { get set }
     var selectedStep: Int { get set }
     

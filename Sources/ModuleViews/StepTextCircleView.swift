@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class StepTextCircleView: StepBaseCircleView {
+final internal class StepTextCircleView: StepBaseCircleView {
     
     // MARK: - private properties
     private var context: CGContext!

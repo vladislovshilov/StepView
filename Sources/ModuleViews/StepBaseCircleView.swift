@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StepBaseCircleView: UIView {
+internal class StepBaseCircleView: UIView {
     
     // MARK: - private properties
     private var path: UIBezierPath!
