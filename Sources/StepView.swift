@@ -38,7 +38,7 @@ open class StepView: UIView {
     public var text: String?
     
     // MARK: - init
-    convenience init(frame: CGRect,
+    convenience public init(frame: CGRect,
                      numberOfSteps: Int,
                      circleBorderColor: UIColor) {
         self.init(frame: frame)
@@ -46,7 +46,7 @@ open class StepView: UIView {
         self.circleBorderColor = circleBorderColor
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .clear
     }
