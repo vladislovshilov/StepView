@@ -18,24 +18,24 @@ open class StepView: UIView {
     private var stepViews = [StepBaseCircleView]()
     
     // MARK: - public properties
-    @IBInspectable var numberOfSteps: Int = 0
-    @IBInspectable var selectedStep: Int = 1
+    @IBInspectable public var numberOfSteps: Int = 0
+    @IBInspectable public var selectedStep: Int = 1
     
-    @IBInspectable var circleBorderColor: UIColor = .black
-    @IBInspectable var circleFilledColor: UIColor = .black
-    @IBInspectable var circleRadius: CGFloat = 15
-    @IBInspectable var circleBorderWidth: CGFloat = 1
+    @IBInspectable public var circleBorderColor: UIColor = .black
+    @IBInspectable public var circleFilledColor: UIColor = .black
+    @IBInspectable public var circleRadius: CGFloat = 15
+    @IBInspectable public var circleBorderWidth: CGFloat = 1
     
-    @IBInspectable var selectedCircleBorderColor: UIColor = .black
-    @IBInspectable var selectedCircleFilledColor: UIColor = .clear
-    @IBInspectable var selectedCircleRadius: CGFloat = 30
+    @IBInspectable public var selectedCircleBorderColor: UIColor = .black
+    @IBInspectable public var selectedCircleFilledColor: UIColor = .clear
+    @IBInspectable public var selectedCircleRadius: CGFloat = 30
     
-    @IBInspectable var lineBorderColor: UIColor?
-    @IBInspectable var lineBorderHeight: CGFloat = 1
+    @IBInspectable public var lineBorderColor: UIColor?
+    @IBInspectable public var lineBorderHeight: CGFloat = 1
     
-    @IBInspectable var textColor: UIColor?
-    var textFont = UIFont.systemFont(ofSize: 0)
-    var text: String?
+    @IBInspectable public var textColor: UIColor?
+    public var textFont = UIFont.systemFont(ofSize: 0)
+    public var text: String?
     
     // MARK: - init
     convenience init(frame: CGRect,
@@ -60,15 +60,15 @@ open class StepView: UIView {
 // MARK: - Interface
 
 extension StepView: StepViewContainer {
-    func showNextStep() {
+    public func showNextStep() {
         moveTo(step: selectedStep + 1)
     }
     
-    func showPreviousStep() {
+    public func showPreviousStep() {
         moveTo(step: selectedStep - 1)
     }
     
-    func moveTo(step: Int) {
+    public func moveTo(step: Int) {
         // if step is out of range we return
         if step > numberOfSteps || step < 0 {
             return

@@ -16,6 +16,14 @@
 		5118F45021C7BE6B00AEE0E5 /* StepBaseCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F44F21C7BE6B00AEE0E5 /* StepBaseCircleView.swift */; };
 		5118F45221C7BED800AEE0E5 /* StepTextCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F45121C7BED800AEE0E5 /* StepTextCircleView.swift */; };
 		5118F45421C7BFD700AEE0E5 /* StepViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F45321C7BFD700AEE0E5 /* StepViewContainer.swift */; };
+		5118F45C21C7D28000AEE0E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F45B21C7D28000AEE0E5 /* AppDelegate.swift */; };
+		5118F46121C7D28000AEE0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5118F45F21C7D28000AEE0E5 /* Main.storyboard */; };
+		5118F46321C7D28200AEE0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5118F46221C7D28200AEE0E5 /* Assets.xcassets */; };
+		5118F46621C7D28200AEE0E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5118F46421C7D28200AEE0E5 /* LaunchScreen.storyboard */; };
+		5118F46C21C7D30600AEE0E5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F46B21C7D30600AEE0E5 /* FirstViewController.swift */; };
+		5118F46E21C7D3C000AEE0E5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F46D21C7D3C000AEE0E5 /* SecondViewController.swift */; };
+		5118F49C21C7E11200AEE0E5 /* StepView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5118F41E21C7A6B600AEE0E5 /* StepView.framework */; };
+		5118F49E21C7E33500AEE0E5 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F49D21C7E33500AEE0E5 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,15 @@
 		5118F44F21C7BE6B00AEE0E5 /* StepBaseCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBaseCircleView.swift; sourceTree = "<group>"; };
 		5118F45121C7BED800AEE0E5 /* StepTextCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepTextCircleView.swift; sourceTree = "<group>"; };
 		5118F45321C7BFD700AEE0E5 /* StepViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewContainer.swift; sourceTree = "<group>"; };
+		5118F45921C7D28000AEE0E5 /* StepViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5118F45B21C7D28000AEE0E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5118F46021C7D28000AEE0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5118F46221C7D28200AEE0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5118F46521C7D28200AEE0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5118F46721C7D28200AEE0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5118F46B21C7D30600AEE0E5 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5118F46D21C7D3C000AEE0E5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5118F49D21C7E33500AEE0E5 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +57,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5118F45621C7D28000AEE0E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5118F49C21C7E11200AEE0E5 /* StepView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,7 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				5118F42B21C7AB1E00AEE0E5 /* Sources */,
+				5118F45A21C7D28000AEE0E5 /* StepViewExample */,
 				5118F41F21C7A6B600AEE0E5 /* Products */,
+				5118F49B21C7E11200AEE0E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5118F41E21C7A6B600AEE0E5 /* StepView.framework */,
+				5118F45921C7D28000AEE0E5 /* StepViewExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +136,28 @@
 			path = ModuleViews;
 			sourceTree = "<group>";
 		};
+		5118F45A21C7D28000AEE0E5 /* StepViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				5118F45B21C7D28000AEE0E5 /* AppDelegate.swift */,
+				5118F49D21C7E33500AEE0E5 /* ContainerViewController.swift */,
+				5118F46B21C7D30600AEE0E5 /* FirstViewController.swift */,
+				5118F46D21C7D3C000AEE0E5 /* SecondViewController.swift */,
+				5118F45F21C7D28000AEE0E5 /* Main.storyboard */,
+				5118F46221C7D28200AEE0E5 /* Assets.xcassets */,
+				5118F46421C7D28200AEE0E5 /* LaunchScreen.storyboard */,
+				5118F46721C7D28200AEE0E5 /* Info.plist */,
+			);
+			path = StepViewExample;
+			sourceTree = "<group>";
+		};
+		5118F49B21C7E11200AEE0E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -140,18 +190,39 @@
 			productReference = 5118F41E21C7A6B600AEE0E5 /* StepView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5118F45821C7D28000AEE0E5 /* StepViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5118F46A21C7D28200AEE0E5 /* Build configuration list for PBXNativeTarget "StepViewExample" */;
+			buildPhases = (
+				5118F45521C7D28000AEE0E5 /* Sources */,
+				5118F45621C7D28000AEE0E5 /* Frameworks */,
+				5118F45721C7D28000AEE0E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepViewExample;
+			productName = StepViewExample;
+			productReference = 5118F45921C7D28000AEE0E5 /* StepViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5118F41521C7A6B600AEE0E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = VladislavShilov;
 				TargetAttributes = {
 					5118F41D21C7A6B600AEE0E5 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					5118F45821C7D28000AEE0E5 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -161,6 +232,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5118F41421C7A6B600AEE0E5;
 			productRefGroup = 5118F41F21C7A6B600AEE0E5 /* Products */;
@@ -168,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				5118F41D21C7A6B600AEE0E5 /* StepView */,
+				5118F45821C7D28000AEE0E5 /* StepViewExample */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +250,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5118F45721C7D28000AEE0E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5118F46621C7D28200AEE0E5 /* LaunchScreen.storyboard in Resources */,
+				5118F46321C7D28200AEE0E5 /* Assets.xcassets in Resources */,
+				5118F46121C7D28000AEE0E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +281,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5118F45521C7D28000AEE0E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5118F46E21C7D3C000AEE0E5 /* SecondViewController.swift in Sources */,
+				5118F46C21C7D30600AEE0E5 /* FirstViewController.swift in Sources */,
+				5118F49E21C7E33500AEE0E5 /* ContainerViewController.swift in Sources */,
+				5118F45C21C7D28000AEE0E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5118F45F21C7D28000AEE0E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5118F46021C7D28000AEE0E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5118F46421C7D28200AEE0E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5118F46521C7D28200AEE0E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5118F42421C7A6B600AEE0E5 /* Debug */ = {
@@ -376,6 +489,42 @@
 			};
 			name = Release;
 		};
+		5118F46821C7D28200AEE0E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StepViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VladislavShilov.StepViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5118F46921C7D28200AEE0E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StepViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VladislavShilov.StepViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -393,6 +542,15 @@
 			buildConfigurations = (
 				5118F42721C7A6B600AEE0E5 /* Debug */,
 				5118F42821C7A6B600AEE0E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5118F46A21C7D28200AEE0E5 /* Build configuration list for PBXNativeTarget "StepViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5118F46821C7D28200AEE0E5 /* Debug */,
+				5118F46921C7D28200AEE0E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
