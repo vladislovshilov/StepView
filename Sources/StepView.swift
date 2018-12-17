@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class StepView: UIView {
+open class StepView: UIView {
     
     // MARK: - private properties
     private var stepViewWidth: CGFloat {
@@ -51,7 +51,7 @@ public class StepView: UIView {
         backgroundColor = .clear
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         backgroundColor = .clear
     }
@@ -91,7 +91,7 @@ extension StepView: StepViewContainer {
 // MARK:- Drawing logic
 
 extension StepView {
-    override public func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         prepareForDraw()
         createStepViews()
     }

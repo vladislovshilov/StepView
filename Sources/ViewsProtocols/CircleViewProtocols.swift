@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal protocol ICircleViewDrawable {
+protocol ICircleViewDrawable {
     var circleBorderColor: UIColor { get set }
     var circleFilledColor: UIColor { get set }
     var circleRadius: CGFloat { get set }
@@ -17,7 +17,7 @@ internal protocol ICircleViewDrawable {
     func drawCircle()
 }
 
-internal protocol ITextCircleViewDrawable: ICircleViewDrawable {
+protocol ITextCircleViewDrawable: ICircleViewDrawable {
     var text: String { get set }
     var textColor: UIColor? { get set }
     var textFont: UIFont { get set }
@@ -25,7 +25,7 @@ internal protocol ITextCircleViewDrawable: ICircleViewDrawable {
     func drawText()
 }
 
-internal protocol ILineDrawable {
+protocol ILineDrawable {
     var lineBorderColor: UIColor? { get set }
     var lineBorderHeight: CGFloat { get set }
     var shouldShowLeftLine: Bool { get set }
