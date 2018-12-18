@@ -21,6 +21,8 @@ open class StepView: UIView {
     @IBInspectable public var numberOfSteps: Int = 0
     @IBInspectable public var selectedStep: Int = 1
     
+    @IBInspectable public var circleNextStepBorderColor: UIColor?
+    @IBInspectable public var circleNextStepFilledColor: UIColor = .clear
     @IBInspectable public var circleBorderColor: UIColor = .black
     @IBInspectable public var circleFilledColor: UIColor = .black
     @IBInspectable public var circleRadius: CGFloat = 15
@@ -137,8 +139,8 @@ extension StepView {
                                       circleBorderColor: circleBorderColor)
             // if step of view < selected step
             // fill circle
-            stepView.circleFilledColor = index < selectedStep ? circleFilledColor : .clear
-            stepView.circleBorderColor = circleBorderColor
+            stepView.circleFilledColor = index < selectedStep ? circleFilledColor : circleNextStepFilledColor
+            stepView.circleBorderColor = index < selectedStep ? circleBorderColor : circleNextStepBorderColor ?? circleBorderColor
         }
         
         // configure view's right and left lines
