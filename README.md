@@ -22,10 +22,26 @@
 ![storyboard example3](https://i.ibb.co/yPkvtX4/Screen-Shot-2018-12-18-at-12-43-26-PM.png)
 
 ### Code:
+
+1. Create view
 ```
 let stepView = StepView(frame: view.frame, numberOfSteps: 5, circleBorderColor: .black)
 stepView.center = view.center
 view.addSubview(stepView)
+```
+
+2. Change step:
+Change to the next step:
+```
+stepView.showNextStep()
+```
+or for the previous step:
+```
+stepView.showPreviousStep()
+```
+also you can set a different step by the:
+```
+moveTo(step: 5)
 ```
 
 ## Installation:
