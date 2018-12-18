@@ -42,7 +42,7 @@ stepView.showPreviousStep()
 ```
 also you can set a different step by the:
 ```Swift
-moveTo(step: 5)
+stepView.moveTo(step: 5)
 ```
 
 ## Installation:
