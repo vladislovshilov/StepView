@@ -6,3 +6,34 @@
 
 ![example gif](https://media.giphy.com/media/450INtPPuYp3h7W07H/giphy.gif) ![example gif1](https://media.giphy.com/media/7A1drTOKUM46ElGgqF/giphy.gif)
 
+## Usage:
+### Storyboard:
+
+1. Set a view custom class as the StepView
+
+![storyboard example1](https://i.ibb.co/QJvnjNn/Screen-Shot-2018-12-18-at-12-38-52-PM.png)
+
+2. Configure view from attribute inspector as you want.
+
+![storyboard example2](https://i.ibb.co/MpF7s44/Screen-Shot-2018-12-18-at-12-42-48-PM.png)
+
+3. Profit
+
+![storyboard example3](https://i.ibb.co/yPkvtX4/Screen-Shot-2018-12-18-at-12-43-26-PM.png)
+
+### Code:
+```
+let stepView = StepView(frame: view.frame, numberOfSteps: 5, circleBorderColor: .black)
+stepView.center = view.center
+view.addSubview(stepView)
+```
+
+## Installation:
+### Cocoapods:
+Add the following entry to your Podfile:
+```
+pod 'StepView'
+```
+Then run ```pod install```.
+
+Don't forget to ```import StepView``` in every file you'd like to use StepView.
