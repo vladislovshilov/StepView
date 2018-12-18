@@ -24,7 +24,7 @@
 ### Code:
 
 1. Create view
-```
+```Swift
 let stepView = StepView(frame: view.frame, numberOfSteps: 5, circleBorderColor: .black)
 stepView.center = view.center
 view.addSubview(stepView)
@@ -33,15 +33,15 @@ view.addSubview(stepView)
 2. Change step:
 
 Change to the next step:
-```
+```Swift
 stepView.showNextStep()
 ```
 or for the previous step:
-```
+```Swift
 stepView.showPreviousStep()
 ```
 also you can set a different step by the:
-```
+```Swift
 moveTo(step: 5)
 ```
 
