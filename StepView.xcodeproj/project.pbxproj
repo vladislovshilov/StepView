@@ -24,7 +24,32 @@
 		5118F46E21C7D3C000AEE0E5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F46D21C7D3C000AEE0E5 /* SecondViewController.swift */; };
 		5118F49C21C7E11200AEE0E5 /* StepView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5118F41E21C7A6B600AEE0E5 /* StepView.framework */; };
 		5118F49E21C7E33500AEE0E5 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118F49D21C7E33500AEE0E5 /* ContainerViewController.swift */; };
+		5127D18B21C8F39E00EBD537 /* StepView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5118F41E21C7A6B600AEE0E5 /* StepView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5127D18C21C8F39E00EBD537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5118F41521C7A6B600AEE0E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5118F41D21C7A6B600AEE0E5;
+			remoteInfo = StepView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5127D18E21C8F39F00EBD537 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5127D18B21C8F39E00EBD537 /* StepView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5118F41E21C7A6B600AEE0E5 /* StepView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StepView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,10 +226,12 @@
 				5118F45521C7D28000AEE0E5 /* Sources */,
 				5118F45621C7D28000AEE0E5 /* Frameworks */,
 				5118F45721C7D28000AEE0E5 /* Resources */,
+				5127D18E21C8F39F00EBD537 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5127D18D21C8F39E00EBD537 /* PBXTargetDependency */,
 			);
 			name = StepViewExample;
 			productName = StepViewExample;
@@ -297,6 +324,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5127D18D21C8F39E00EBD537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5118F41D21C7A6B600AEE0E5 /* StepView */;
+			targetProxy = 5127D18C21C8F39E00EBD537 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5118F45F21C7D28000AEE0E5 /* Main.storyboard */ = {
@@ -447,7 +482,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HP7Q2CQ5U9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -475,7 +509,6 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HP7Q2CQ5U9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -501,6 +534,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HP7Q2CQ5U9;
 				INFOPLIST_FILE = StepViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,6 +553,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HP7Q2CQ5U9;
 				INFOPLIST_FILE = StepViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
