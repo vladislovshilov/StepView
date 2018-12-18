@@ -4,7 +4,7 @@
 
 ## Example 
 
-![example gif](https://media.giphy.com/media/450INtPPuYp3h7W07H/giphy.gif) ![example gif1](https://media.giphy.com/media/7A1drTOKUM46ElGgqF/giphy.gif)
+![example gif1](https://media.giphy.com/media/7A1drTOKUM46ElGgqF/giphy.gif)
 
 ## Usage:
 ### Storyboard:
