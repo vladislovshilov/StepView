@@ -31,6 +31,7 @@ view.addSubview(stepView)
 ```
 
 2. Change step:
+
 Change to the next step:
 ```
 stepView.showNextStep()
