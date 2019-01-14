@@ -6,6 +6,8 @@
 
 ![example gif1](https://media.giphy.com/media/7A1drTOKUM46ElGgqF/giphy.gif)
 
+![example pic](https://i.ibb.co/2ZbshX6/Screen-Shot-2018-12-17-at-7-37-45-PM.png)
+
 ## Usage:
 ### Storyboard:
 
